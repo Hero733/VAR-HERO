@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VAR HERO</title> <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>VAR Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,7 +14,8 @@
         <div class="login-container">
             <div class="login-header">
                 <i class="fas fa-lock login-icon"></i>
-                <h1>เข้าสู่ระบบ VAR HERO</h1> <p>กรุณาป้อนรหัสผ่านเพื่อดำเนินการต่อ</p>
+                <h1>เข้าสู่ระบบ VAR Simulator</h1>
+                <p>กรุณาป้อนรหัสผ่านเพื่อดำเนินการต่อ</p>
             </div>
             <div class="input-group">
                 <label for="password-input">รหัสผ่าน:</label>
@@ -26,7 +29,8 @@
     <section id="landing-page" class="page-section hidden">
         <div class="landing-content">
             <i class="fas fa-video landing-icon"></i>
-            <h1>ยินดีต้อนรับสู่ VAR HERO</h1> <p>สัมผัสประสบการณ์การทำงานของ VAR (Video Assistant Referee) เสมือนจริง</p>
+            <h1>ยินดีต้อนรับสู่ VAR Simulator</h1>
+            <p>สัมผัสประสบการณ์การทำงานของ VAR (Video Assistant Referee) เสมือนจริง</p>
             <button id="start-simulation-btn" class="btn btn-large btn-primary">
                 <i class="fas fa-play-circle"></i> เริ่มการจำลอง
             </button>
@@ -46,7 +50,8 @@
     <section id="var-dashboard" class="page-section hidden">
         <aside class="sidebar">
             <div class="sidebar-header">
-                <i class="fas fa-desktop"></i> VAR HERO Dashboard </div>
+                <i class="fas fa-desktop"></i> VAR Dashboard
+            </div>
             <nav class="sidebar-nav">
                 <a href="#" class="nav-item active" data-page="home"><i class="fas fa-home"></i> หน้าหลัก</a>
                 <a href="#" class="nav-item" data-page="monitors"><i class="fas fa-camera"></i> จอภาพตรวจสอบ</a>
@@ -62,7 +67,8 @@
 
         <main class="main-content">
             <header class="dashboard-header">
-                <h1><i class="fas fa-bullseye"></i> ศูนย์ปฏิบัติการ VAR HERO</h1> <div class="header-info">
+                <h1><i class="fas fa-bullseye"></i> ศูนย์ปฏิบัติการ VAR</h1>
+                <div class="header-info">
                     <p>เหตุการณ์ปัจจุบัน: <span id="current-incident-display">ไม่มี</span></p>
                     <p>สถานะ VAR: <span class="status-indicator ready" id="var-status">พร้อม</span></p>
                 </div>
@@ -77,7 +83,9 @@
                             <input type="file" id="video-file-input" accept="video/*" class="hidden-input">
                         </div>
                         <div class="video-container">
-                            <video id="main-video-player" controls preload="auto" poster="placeholder.jpg"> <source src="sample.mp4" type="video/mp4"> เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+                            <video id="main-video-player" controls preload="auto" poster="placeholder.jpg">
+                                <source src="sample.mp4" type="video/mp4">
+                                เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
                             </video>
                             <div id="var-overlay" class="var-overlay hidden">
                                 <i class="fas fa-exclamation-triangle"></i> กำลังตรวจสอบ VAR
@@ -148,19 +156,23 @@
                         <div class="var-display-grid">
                             <div class="display-item">
                                 <h3>กล้องหลัก</h3>
-                                <img src="monitor-placeholder.jpg" alt="กล้องหลัก"> <p>มุมมองหลักจากสนาม</p>
+                                <img src="monitor-placeholder.jpg" alt="กล้องหลัก">
+                                <p>มุมมองหลักจากสนาม</p>
                             </div>
                             <div class="display-item">
                                 <h3>กล้องมุมกว้าง</h3>
-                                <img src="monitor-placeholder.jpg" alt="กล้องมุมกว้าง"> <p>ภาพรวมของสนาม</p>
+                                <img src="monitor-placeholder.jpg" alt="กล้องมุมกว้าง">
+                                <p>ภาพรวมของสนาม</p>
                             </div>
                             <div class="display-item">
                                 <h3>กล้องสโลว์โมชั่น</h3>
-                                <img src="monitor-placeholder.jpg" alt="กล้องสโลว์โมชั่น"> <p>จับภาพรายละเอียดการเคลื่อนไหว</p>
+                                <img src="monitor-placeholder.jpg" alt="กล้องสโลว์โมชั่น">
+                                <p>จับภาพรายละเอียดการเคลื่อนไหว</p>
                             </div>
                             <div class="display-item">
                                 <h3>กล้องประตู</h3>
-                                <img src="monitor-placeholder.jpg" alt="กล้องประตู"> <p>สำหรับเหตุการณ์บริเวณหน้าประตู</p>
+                                <img src="monitor-placeholder.jpg" alt="กล้องประตู">
+                                <p>สำหรับเหตุการณ์บริเวณหน้าประตู</p>
                             </div>
                         </div>
                     </div>
@@ -211,13 +223,15 @@
                                 <li><i class="fas fa-calendar-alt"></i> อัปเดตล่าสุด: 1 กรกฎาคม 2568</li>
                             </ul>
                             <h3>เกี่ยวกับ</h3>
-                            <p>VAR HERO นี้ถูกพัฒนาขึ้นเพื่อการฝึกอบรมและทำความเข้าใจกระบวนการ VAR</p> </div>
+                            <p>VAR Simulator นี้ถูกพัฒนาขึ้นเพื่อการฝึกอบรมและทำความเข้าใจกระบวนการ VAR</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <footer>
-                <p>&copy; 2025 VAR HERO. สงวนลิขสิทธิ์.</p> <div class="credits">
+                <p>&copy; 2025 VAR Simulator. สงวนลิขสิทธิ์.</p>
+                <div class="credits">
                     <p>พัฒนาโดย: <a href="https://github.com/yourusername" target="_blank">ชื่อของคุณ / GitHub</a></p>
                     <p>ไอคอนจาก: <a href="https://fontawesome.com/" target="_blank">Font Awesome</a></p>
                 </div>
@@ -230,11 +244,13 @@
             <span class="close-button">&times;</span>
             <h2 id="spot-check-title">การตรวจสอบจุดสำคัญ</h2>
             <div class="spot-check-body">
-                <img id="spot-check-image" src="spot-check-placeholder.jpg" alt="Spot Check Image"> <p id="spot-check-description">กำลังวิเคราะห์ภาพจากหลายมุมมองเพื่อหาหลักฐาน</p>
+                <img id="spot-check-image" src="spot-check-placeholder.jpg" alt="Spot Check Image">
+                <p id="spot-check-description">กำลังวิเคราะห์ภาพจากหลายมุมมองเพื่อหาหลักฐาน</p>
             </div>
             <button class="btn btn-primary" onclick="hideSpotCheckModal()">ปิด</button>
         </div>
     </div>
 
-    <script src="script.js"></script> </body>
+    <script src="script.js"></script>
+</body>
 </html>
