@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
         landingPage.classList.add('hidden');
         varDashboard.classList.remove('hidden');
         varDashboard.classList.add('active');
-        logCommMessage('ระบบ', 'VAR HERO เริ่มทำงานแล้ว', 'system-msg'); // เปลี่ยนชื่อ
+        logCommMessage('ระบบ', 'VAR Simulator เริ่มทำงานแล้ว', 'system-msg');
         showPage('home-page'); // Initial setup for the home page when dashboard loads
     });
 
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
         varDashboard.classList.add('hidden');
         loginPage.classList.remove('hidden');
         loginPage.classList.add('active');
-        logCommMessage('ระบบ', 'ออกจากระบบ VAR HERO แล้ว', 'system-msg'); // เปลี่ยนชื่อ
+        logCommMessage('ระบบ', 'ออกจากระบบ VAR Simulator แล้ว', 'system-msg');
         resetSimulator(); // Reset simulator state on logout
     });
 
@@ -341,7 +341,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function showSpotCheckModal(description = 'กำลังตรวจสอบจุดที่น่าสงสัย...') {
         spotCheckTitle.textContent = 'การตรวจสอบจุดสำคัญ';
         spotCheckDescription.textContent = description;
-        spotCheckImage.src = 'spot-check-placeholder.jpg'; // **ตรวจสอบ path รูปภาพ**
+        // You can change spotCheckImage.src here dynamically if you have different images
+        spotCheckImage.src = 'spot-check-placeholder.jpg'; // Example placeholder
         spotCheckModal.classList.remove('hidden');
     }
 
@@ -384,7 +385,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Initial setup/Reset ---
     function resetSimulator() {
-        // **ตรวจสอบ path ไฟล์วิดีโอและรูปภาพ**
         mainVideoPlayer.src = 'sample.mp4'; // Reset video
         mainVideoPlayer.load();
         mainVideoPlayer.pause();
